@@ -15,7 +15,7 @@ agent = Agent(
 )
 
 def handle_task(job_input: str) -> str:
-    """Use Gemini agent to process the job input """
+    """Use Gemini agent to process the job input  """
     try:
         response = agent.run(job_input)
         return response.content if hasattr(response, 'content') else str(response)
